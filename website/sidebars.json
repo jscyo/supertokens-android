@@ -1,0 +1,36 @@
+{
+    "docs": {
+        "Introduction": [
+            "introduction/what-and-why",
+            "introduction/installation"
+        ],
+
+        "Using HttpURLConnection": [
+            "http/usage-http",
+            "http/request-http",
+            "http/verifying-session-http"
+        ],
+
+        "Using OkHttp/Retrofit": [
+            "okhttp/usage-okhttp",
+            "okhttp/request-okhttp",
+            "okhttp/verifying-session-okhttp"
+        ],
+
+        "Migration": [
+            "migration/migration"
+        ],
+
+        "Example Project": [
+            "demo/demo"
+        ],
+
+        "API Reference": [
+            "api-reference/api-reference"
+        ],
+
+        "Troubleshooting": [
+            "troubleshoot"
+        ]
+    }
+}
