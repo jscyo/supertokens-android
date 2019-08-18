@@ -23,7 +23,7 @@
       },
       "http/verifying-session-http": {
         "title": "Verifying if a session exists",
-        "sidebar_label": "verifying Sessions"
+        "sidebar_label": "Verifying Sessions"
       },
       "introduction/installation": {
         "title": "Installing Supertokens",
@@ -47,11 +47,7 @@
       },
       "okhttp/verifying-session-okhttp": {
         "title": "Verifying if a session exists",
-        "sidebar_label": "verifying Sessions"
-      },
-      "troubleshoot": {
-        "title": "Troubleshooting",
-        "sidebar_label": "Troubleshooting"
+        "sidebar_label": "Verifying Sessions"
       }
     },
     "links": {
@@ -65,8 +61,7 @@
       "Using OkHttp/Retrofit": "Using OkHttp/Retrofit",
       "Migration": "Migration",
       "Example Project": "Example Project",
-      "API Reference": "API Reference",
-      "Troubleshooting": "Troubleshooting"
+      "API Reference": "API Reference"
     }
   },
   "pages-strings": {
