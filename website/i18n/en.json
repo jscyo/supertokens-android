@@ -34,7 +34,7 @@
         "sidebar_label": "Why is this needed"
       },
       "migration/migration": {
-        "title": "Migrating to SuperTokens",
+        "title": "Add SuperTokens to an existing application",
         "sidebar_label": "Migration"
       },
       "okhttp/request-okhttp": {
