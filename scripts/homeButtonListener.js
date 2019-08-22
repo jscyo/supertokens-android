@@ -325,7 +325,7 @@ document.addEventListener("DOMContentLoaded", () => {
     gtag('config', 'UA-143540696-1');
 
     let body = document.getElementsByTagName("body")[0];
-    addChat();
+    // addChat();
     
     body.style.display = "block";
 });
