@@ -38,7 +38,7 @@ sidebar_label: API Reference
 
 <div class="divider"></div>
 
-## ```SuperTokensHttpRequest.newRequest(URL url, SuperTokensHttpCallback<T> callback)```
+## ```SuperTokensHttpURLConnection.newRequest(URL url, SuperTokensHttpCallback<T> callback)```
 ##### Parameters
 - ```url```
     - Type: java.net ```URL```
@@ -54,3 +54,33 @@ The output of the callback that is provided to this method.
 - ```IllegalAccessException``` if ```SuperTokens.init``` has not been called or if the ```Application``` object provided to the init function is null.
 - ```IOException``` if any of the operations on the connection fail
 - ```URISyntaxException``` if the provided URL object or the refresh token endpoint provided to the ```SuperTokens.init``` function is invalid.
+
+<div class="divider"></div>
+
+## ```SuperTokensHttpURLConnection.attemptRefreshingSession()```
+Use this to manually call the refresh token endpoint to refresh the session when using HttpURLConnection.
+##### Parameters
+- none
+
+##### Returns
+- nothing
+
+##### Throws
+- ```IllegalAccessException``` if ```SuperTokens.init``` has not been called or if the ```Application``` object provided to the init function is null.
+- ```IOException``` if there is an error connecting to the refresh token endpoint
+
+<div class="divider"></div>
+
+## ```SuperTokensInterceptor.attemptRefreshingSession(OkHttpClient client)```
+Use this to manually call the refresh token endpoint to refresh the session when using OkHttp or Retrofit.
+##### Parameters
+- ```client```
+    - Type: ```OkHttpClient```
+    - Your network client used to make API calls.
+
+##### Returns
+- nothing
+
+##### Throws
+- ```IllegalAccessException``` if ```SuperTokens.init``` has not been called or if the ```Application``` object provided to the init function is null.
+- ```IOException``` if there is an error connecting to the refresh token endpoint

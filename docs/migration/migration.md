@@ -38,7 +38,7 @@ SuperTokens.init(getApplication(), "YOUR REFRESH TOKEN ENDPOINT", 440);
 
 // Actual API call
 URL url = new URL("YOUR API URL");
-InputStream inputStream = SuperTokensHttpRequest.newRequest(url, new SuperTokensHttpRequest.SuperTokensHttpCallback<InputStream>() {
+InputStream inputStream = SuperTokensHttpURLConnection.newRequest(url, new SuperTokensHttpURLConnection.SuperTokensHttpURLConnectionCallback<InputStream>() {
     @Override
     public InputStream runOnConnection(HttpURLConnection con) {
         try {
@@ -58,7 +58,7 @@ InputStream inputStream = SuperTokensHttpRequest.newRequest(url, new SuperTokens
 
 Using the ```newRequest``` method allows SuperTokens to handle unauthorized errors for you. If the API call fails with the status code you provide (440 in this case) the library calls the refresh token endpoint, retrieves the new token values and retries the original API call automatically. The result of the callback function is returned when the API call does not fail.
 
-When using ```HttpUrlConnection``` the library uses a persistent cookie store if you don't already use one.
+SuperTokens uses cookies for session management and relies on you to set a default ```CookieManager```. If you do not set one the library will throw an exception. For an example of how to set a ```CookieManager``` for your application refer to our <a href="https://github.com/supertokens/android-demo" target="_blank">demo app</a>.
 
 <div class="specialNote">
 The library calls <code>HttpURLConnection.disconnect()</code> for you, please make sure to not call the disconnect method inside or after the callback function.

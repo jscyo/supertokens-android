@@ -8,13 +8,15 @@
         "Using HttpURLConnection": [
             "http/usage-http",
             "http/request-http",
-            "http/verifying-session-http"
+            "http/verifying-session-http",
+            "http/manual-refresh-http"
         ],
 
         "Using OkHttp/Retrofit": [
             "okhttp/usage-okhttp",
             "okhttp/request-okhttp",
-            "okhttp/verifying-session-okhttp"
+            "okhttp/verifying-session-okhttp",
+            "okhttp/manual-refresh-okhttp"
         ],
 
         "Migration": [
