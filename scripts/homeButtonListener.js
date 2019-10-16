@@ -144,7 +144,7 @@ function addScheduleCallModal() {
                     style="display: flex; align-items: center;">
                     <div
                         class="schedule-call-child"
-                        style="font-size: 18px; line-height: 26px; color: #dddddd; display: flex; font-weight: 600">
+                        style="font-size: 18px; line-height: 26px; color: #dddddd; display: flex">
                         Need help with anything?
                     </div>
                     <img
@@ -186,7 +186,7 @@ function addScheduleCallModal() {
     `;
     let container = document.getElementsByTagName("body")[0];
     if ( container !== null ) {
-        container.innerHTML = container.innerHTML + modal;
+        container.insertAdjacentHTML("beforeend", modal);
     }
 }
 
