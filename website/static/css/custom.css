@@ -325,6 +325,7 @@ a.highlighted-text {
       padding-top: 10px;
       padding-bottom: 20px;
       width: 20vw;
+      min-width: 300px;
       background-color: #444444;
       border-top-left-radius: 6px;
       border-top-right-radius: 6px;
@@ -353,7 +354,6 @@ a.highlighted-text {
 
   .wrapper {
       margin: 0px !important;
-      padding-left: 40px !important;
   }
 
  /* ZOHO CONTENT */
