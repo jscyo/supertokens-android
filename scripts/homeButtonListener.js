@@ -44,6 +44,9 @@ function isMobileDevice() {
 }
 
 function showScheduleCallModal() {
+    if (isMobileDevice()) {
+        return;
+    }
     let modal = document.getElementById("schedule-call-modal");
     if ( modal !== null ) {
         let splittedCurrPath = window.location.pathname.split("/");
@@ -70,6 +73,9 @@ function showScheduleCallModal() {
 }
 
 function dismissScheduleCallModal() {
+    if (isMobileDevice()) {
+        return;
+    }
     let modal = document.getElementById("schedule-call-modal");
     if ( modal !== null ) {
         let splittedCurrPath = window.location.pathname.split("/");
@@ -101,6 +107,9 @@ function onScheduleCallClicked() {
 }
 
 function onCloseScheduleCallClicked() {
+    if (isMobileDevice()) {
+        return;
+    }
     dismissScheduleCallModal();
     let iframe = document.getElementById(iframeId);
     if ( iframe !== null && iframe.contentWindow !== null ) {
@@ -119,6 +128,9 @@ function onCloseScheduleCallClicked() {
 }
 
 function onScheduleModalImageClicked() {
+    if (isMobileDevice()) {
+        return;
+    }
     let scheduleCallModal = document.getElementById("schedule-call-modal");
     if (scheduleCallModal !== null) {
         let classList = scheduleCallModal.classList;
@@ -132,6 +144,9 @@ function onScheduleModalImageClicked() {
 }
 
 function addScheduleCallModal() {
+    if (isMobileDevice()) {
+        return;
+    }
     let splittedCurrPath = window.location.pathname.split("/");
     let emojiPath = ["", splittedCurrPath[1], "img", "scheduleCallPopupEmoji.png"].join("/");
     let closedImagePath = ["", splittedCurrPath[1], "img", "scheduleCallClosed.png"].join("/");
